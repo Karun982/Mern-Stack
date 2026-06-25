@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Box Shadow Example</title>
+
+    <style>
+        /* Container */
+        #container {
+            width: 90%;
+            height: 500px;
+            border: 2px solid black;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Child Divs */
+        #container > div {
+            width: 25%;
+            height: 150px;
+            border: 2px solid red;
+            background-color: beige;
+
+            display: inline-block;
+            margin: 20px;
+
+            text-align: center;
+            line-height: 150px;
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 22px;
+            border-radius: 10px;
+
+            /* Box Shadow */
+            box-shadow: 5px 5px 10px gray;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <div id="container">
+        <div>I am div 1</div>
+        <div>I am div 2</div>
+        <div>I am div 3</div>
+    </div>
+
 </body>
 </html>
