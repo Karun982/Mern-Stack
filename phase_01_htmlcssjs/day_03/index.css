@@ -1,0 +1,48 @@
+#container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#formDiv{
+    
+    height: 300px;
+    width: 30%;
+    padding: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#formDiv div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input{
+    margin-bottom: 5px;
+}
+button{
+    padding: 10px;
+}
+
+#movieCardDiv{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    height: 300px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+img{
+    height: 150px;
+    width: 90%;
+}
