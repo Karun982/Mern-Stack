@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 400px;
+
+            
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;;
+        }
+        img{
+            height: 300px;
+            width: 250px;
+        }
+        .btn{
+            display: flex;
+            gap: 20px;
+        }
+        button{
+            font-size: xx-large;
+            width: 100px;
+
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c8a24e64-ca58-41f8-8185-24a688b9f230/df3p7aw-13356d08-bf83-41af-9467-4ca96481d13e.jpg/v1/fill/w_1280,h_1920,q_75,strp/portrait_painting_from_photo___shah_rukh_khan_by_portraitsbyranula_df3p7aw-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTkyMCIsInBhdGgiOiJcL2ZcL2M4YTI0ZTY0LWNhNTgtNDFmOC04MTg1LTI0YTY4OGI5ZjIzMFwvZGYzcDdhdy0xMzM1NmQwOC1iZjgzLTQxYWYtOTQ2Ny00Y2E5NjQ4MWQxM2UuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.8hxPWCCbifPnkz95fmcfVyWv5y7R1Jfj-IjyN0YptxY" alt="">
+        <h3>King Khan</h3>
+        <div class="btn">
+        <button id="LikeBtn">👍</button>
+        <h3>Likes: <span id="LikeCount">0</span></h3>
+        </div>
+        <div class="btn">
+        <button id="dislikeBtn">👎</button>
+        <h3>Dislikes: <span id="DislikeCount">0</span></h3>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    var lbtn=document.getElementById("LikeBtn") //select that element with getelementbyid
+    var count=0
+    lbtn.addEventListener("click",function(){
+        
+        count+=1
+        var likes=document.getElementById("LikeCount")
+        likes.innerText=count
+        likes.style.color="red"
+
+    })
+
+    var count1=0
+    var dlbtn=document.getElementById("dislikeBtn")
+    dlbtn.addEventListener("click",function(){
+        count1+=1
+        var dislikes=document.getElementById("DislikeCount")
+        dislikes.innerText=count1
+    })
+
+
+</script>

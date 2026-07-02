@@ -20,5 +20,5 @@ function handleClick(){
     `
 }
 
-// ${}
+// ${} template literal
 // document.querySelector("")
